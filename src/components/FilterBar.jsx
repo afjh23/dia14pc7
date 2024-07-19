@@ -1,9 +1,9 @@
 import React from 'react'
-import { useContext } from 'react';
-import { PokemonContext } from '../context/PokemonContext';
+import { useContext } from 'react'
+import { PokemonContext } from '../context/PokemonContext'
 
 export const FilterBar = () => {
-  const { active, toggleFilter, handleCheckbox } = useContext(PokemonContext);
+  const { active, toggleFilter, handleCheckbox } = useContext(PokemonContext)
 
   return (
     <div className={`"flex justify-center fixed top-0  w-[250px] text-gray-700 bg-gray-200 h-full pt-[120px] transition-all duration-300 ${active ? 'left: 0' : 'left-[-300px]'}`}>

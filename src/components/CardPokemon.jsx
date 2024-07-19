@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 import './color.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 export const CardPokemon = ({ pokemon }) => {
   
@@ -31,5 +31,5 @@ export const CardPokemon = ({ pokemon }) => {
         </div>
       </div>
     </Link>
-  );
-};
+  )
+}

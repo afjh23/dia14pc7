@@ -4,19 +4,19 @@ import { PokemonContext } from '../context/PokemonContext'
 
 export const Navbar = () => {
     const { onInputChange, valueSearch, onResetForm } =
-		useContext(PokemonContext);
+		useContext(PokemonContext)
 
-	const navigate = useNavigate();
+	const navigate = useNavigate()
 
 	const onSearchSubmit = e => {
-		e.preventDefault();
+		e.preventDefault()
         console.log('Estoy aqui')
 		navigate('/search', {
 			state: valueSearch,
-		});
+		})
 
-		onResetForm();
-	};
+		onResetForm()
+	}
   return (
     <>
     <header className='max-w-6xl mx-auto flex flex-row items-center justify-between py-10 z-10'>

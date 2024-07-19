@@ -1,7 +1,7 @@
-import React from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { HomePage, PokemonPage, SearchPage } from './pages';
+import React from 'react'
+import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navbar } from './components/Navbar'
+import { HomePage, PokemonPage, SearchPage } from './pages'
 
 export const AppRouter = () => {
   return (
@@ -13,7 +13,7 @@ export const AppRouter = () => {
       </Route>
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
-  );
-};
+  )
+}
 
-export default AppRouter;
+export default AppRouter

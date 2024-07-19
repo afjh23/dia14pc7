@@ -1,26 +1,26 @@
 import React, { useContext,useEffect,useState } from 'react'
-import { useParams } from 'react-router-dom';
-import { Loader } from '../components';
+import { useParams } from 'react-router-dom'
+import { Loader } from '../components'
 import { PokemonContext } from '../context/PokemonContext'
-import { primerMayuscula } from '../helper/helper';
+import { primerMayuscula } from '../helper/helper'
 
 export const PokemonPage = () => {
-    const { getPokemonByID } = useContext(PokemonContext);
+    const { getPokemonByID } = useContext(PokemonContext)
 
-	const [loading, setLoading] = useState(true);
-	const [pokemon, setPokemon] = useState({});
+	const [loading, setLoading] = useState(true)
+	const [pokemon, setPokemon] = useState({})
 
-	const { id } = useParams();
+	const { id } = useParams()
 
 	const fetchPokemon = async id => {
-		const data = await getPokemonByID(id);
-		setPokemon(data);
-		setLoading(false);
-	};
+		const data = await getPokemonByID(id)
+		setPokemon(data)
+		setLoading(false)
+	}
 
 	useEffect(() => {
-		fetchPokemon(id);
-	}, []);
+		fetchPokemon(id)
+	}, [])
 
     return (
         <main className='max-w-7xl mx-auto px-4 flex flex-col mt-24 mb-12'>
