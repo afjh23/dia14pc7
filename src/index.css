@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .bg-pokemon-dragon {
+      background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    }
+  }
